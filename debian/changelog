@@ -1,3 +1,9 @@
+rvcg (0.12.2-precise3) precise; urgency=medium
+
+  * added to OpenMP support
+
+ -- Stefan Schlager <zarquon42@gmail.com>  Wed, 14 Oct 2015 16:39:04 +0200
+
 rvcg (0.12.2-precise2) precise; urgency=medium
 
   *  added r-cran-rcppeigen as dependency
