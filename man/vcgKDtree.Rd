@@ -4,7 +4,8 @@
 \alias{vcgKDtree}
 \title{perform kdtree search for 3D-coordinates.}
 \usage{
-vcgKDtree(target, query, k)
+vcgKDtree(target, query, k, nofPoints = 16, maxDepth = 64,
+  threads = parallel::detectCores())
 }
 \arguments{
 \item{target}{n x 3 matrix with 3D coordinates or mesh of class "mesh3d". These coordinates are to be searched.}
@@ -12,6 +13,12 @@ vcgKDtree(target, query, k)
 \item{query}{m x 3 matrix with 3D coordinates or mesh of class "mesh3d". We seach the closest coordinates in \code{target} for each of these.}
 
 \item{k}{number of neighbours to find}
+
+\item{nofPoints}{integer: number of points per cell in the kd-tree (don't change unless you know what you are doing!)}
+
+\item{maxDepth}{integer: depth of the kd-tree (don't change unless you know what you are doing!)}
+
+\item{threads}{integer: threads to use in closest point search.}
 }
 \value{
 a list with
