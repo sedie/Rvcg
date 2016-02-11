@@ -1,3 +1,9 @@
+rvcg (0.13.1.2-precise0) precise; urgency=medium
+
+  * updated cran release
+
+ -- Stefan Schlager <zarquon42@gmail.com>  Thu, 11 Feb 2016 15:23:19 +0100
+
 rvcg (0.12.2-precise4) precise; urgency=medium
 
   * disabled multithreaded kdtree search by default
