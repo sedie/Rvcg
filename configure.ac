@@ -14,10 +14,9 @@ dnl CFLAGS=`"${R_HOME}/bin/R" CMD config CFLAGS`
 CPPFLAGS=`"${R_HOME}/bin/R" CMD config CPPFLAGS`
 CXXFLAGS=`"${R_HOME}/bin/R" CMD config CXXFLAGS`
 LDFLAGS=`"${R_HOME}/bin/R" CMD config LDFLAGS`
-
 AC_LANG_CPLUSPLUS
 # check C++11 compliance and flags
-AX_CXX_COMPILE_STDCXX_11([noext],)
+dnl AX_CXX_COMPILE_STDCXX_11([noext],)
 
 dnl # check availability of TR1 headers
 dnl AC_DEFUN([AC_HEADER_STDCXX_TR1], [
