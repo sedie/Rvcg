@@ -12,8 +12,11 @@ CXX=`"${R_HOME}/bin/R" CMD config CXX`
 echo "using C++ Compiler ...$CXX"
 dnl CFLAGS=`"${R_HOME}/bin/R" CMD config CFLAGS`
 CPPFLAGS=`"${R_HOME}/bin/R" CMD config CPPFLAGS`
-CXXFLAGS=`"${R_HOME}/bin/R" CMD config CXXFLAGS`
+CXXFLAGS=`"${R_HOME}/bin/R" CMD config CXX1XFLAGS`
 LDFLAGS=`"${R_HOME}/bin/R" CMD config LDFLAGS`
+CXX1XSTD=`"${R_HOME}/bin/R" CMD config CXX1XSTD`
+CXXFLAGS="$CXX1XSTD $CXXFLAGS"
+echo $CXXFLAGS
 AC_LANG_CPLUSPLUS
 # check C++11 compliance and flags
 dnl AX_CXX_COMPILE_STDCXX_11([noext],)

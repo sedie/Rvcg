@@ -1775,8 +1775,11 @@ fi
 CXX=`"${R_HOME}/bin/R" CMD config CXX`
 echo "using C++ Compiler ...$CXX"
 CPPFLAGS=`"${R_HOME}/bin/R" CMD config CPPFLAGS`
-CXXFLAGS=`"${R_HOME}/bin/R" CMD config CXXFLAGS`
+CXXFLAGS=`"${R_HOME}/bin/R" CMD config CXX1XFLAGS`
 LDFLAGS=`"${R_HOME}/bin/R" CMD config LDFLAGS`
+CXX1XSTD=`"${R_HOME}/bin/R" CMD config CXX1XSTD`
+CXXFLAGS="$CXX1XSTD $CXXFLAGS"
+echo $CXXFLAGS
 ac_ext=cpp
 ac_cpp='$CXXCPP $CPPFLAGS'
 ac_compile='$CXX -c $CXXFLAGS $CPPFLAGS conftest.$ac_ext >&5'
