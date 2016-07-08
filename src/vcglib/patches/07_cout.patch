@@ -1,8 +1,8 @@
 Index: vcglib/vcg/complex/exception.h
 ===================================================================
---- vcglib.orig/vcg/complex/exception.h	2015-06-23 10:56:31.294097151 +0200
-+++ vcglib/vcg/complex/exception.h	2015-06-23 10:56:31.290097131 +0200
-@@ -30,7 +30,7 @@
+--- vcglib.orig/vcg/complex/exception.h
++++ vcglib/vcg/complex/exception.h
+@@ -30,7 +30,7 @@ class MissingComponentException : public
  public:
    MissingComponentException(const std::string &err):std::runtime_error(err)
    {
@@ -11,7 +11,7 @@ Index: vcglib/vcg/complex/exception.h
    }
      virtual const char *what() const throw ()
      {
-@@ -44,7 +44,7 @@
+@@ -44,7 +44,7 @@ class MissingCompactnessException : publ
  public:
    MissingCompactnessException(const std::string &err):std::runtime_error(err)
    {
