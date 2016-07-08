@@ -1,3 +1,9 @@
+rvcg (0.14-trusty1) trusty; urgency=medium
+
+  * CRAN update
+
+ -- Stefan Schlager <zarquon42@gmail.com>  Fri, 08 Jul 2016 08:42:04 +0200
+
 rvcg (0.13.1.2-precise0) precise; urgency=medium
 
   * updated cran release

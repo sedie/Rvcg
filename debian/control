@@ -2,7 +2,7 @@ Source: rvcg
 Section: gnu-r
 Priority: optional
 Maintainer: Stefan Schlager <zarquon42@gmail.com>
-Build-Depends: r-base-dev, xvfb, xauth, xfonts-base, r-base-core, r-cran-rcpp, r-cran-rcppeigen, debhelper (>> 4.1.0), cdbs
+Build-Depends: r-base-dev, xvfb, xauth, xfonts-base, r-base-core, r-cran-rcpp, r-cran-rcppeigen, r-cran-rcpparmadillo, debhelper (>> 4.1.0), cdbs
 Standards-Version: 3.9.1
 
 Package: r-cran-rvcg
