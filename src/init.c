@@ -51,6 +51,7 @@ extern SEXP RTetrahedron(SEXP);
 extern SEXP RuniformResampling(SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP);
 extern SEXP RupdateNormals(SEXP, SEXP, SEXP, SEXP, SEXP);
 extern SEXP RVFadj(SEXP, SEXP);
+extern SEXP Rvolume(SEXP);
 
 static const R_CMethodDef CEntries[] = {
     {"Rborder", (DL_FUNC) &Rborder, 6},
@@ -98,6 +99,7 @@ static const R_CallMethodDef CallEntries[] = {
     {"RuniformResampling",            (DL_FUNC) &RuniformResampling,             9},
     {"RupdateNormals",                (DL_FUNC) &RupdateNormals,                 5},
     {"RVFadj",                        (DL_FUNC) &RVFadj,                         2},
+    {"Rvolume",                         (DL_FUNC) &Rvolume,                          1},
     {NULL, NULL, 0}
 };
 
